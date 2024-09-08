@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Stylish Navbar -->
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon for mobile view -->
+            <div class="menu-icon" id="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Creative Solutions, Expert Designs, and Professional Projects</p>
+            <a href="#about" class="btn-main">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/IMG_20230414_082427-removebg-preview.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <p>Hello! I'm Nikhil Sharma, a passionate web developer with a keen eye for design and functionality. With a good knowledge in web development, I've worked on numerous projects using technologies like HTML, CSS and JavaScript like this personal portfolios to full fledge projects. I specialize in creating responsive, interactive websites that provide the best user experience.</p>
+                    <p>In my spare time, I love exploring new technologies, contributing to open-source projects, and learning about the latest trends in web development. Let's connect and build something amazing together!</p>
+                    <a href="#contact" class="btn-main">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>My Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bachelor's Degree in Computer Science</h3>
+                    <span>2020 - 2023</span>
+                    <p>Chaudhary Charan Singh University</p>
+                    <p>Graduated in B.Sc[CS], specializing in software development and web technologies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Master's Degree in Computer applications</h3>
+                    <span>2023-Present</span>
+                    <p>Dr. A.P.J Abdul Kalam Technical University</p>
+                    <p>Currently pursuing post graduation in M.C.A, specializing in computer applications</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Ongoing Learning</h3>
+                    <span>2021 - Present</span>
+                    <p>Self-Learning</p>
+                    <p>Continuing to expand my knowledge by completing online courses in advanced JavaScript, React, and some backend technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/Screenshot 2024-09-08 094045.png" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>A To-Do list application for managing to-do items.<br>The skills used here is DOM manipulation and event handling using the javascript.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/Screenshot 2024-09-08 093717.png" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>A Digital Clock that displays the current time and updates in real time.<br> The skills used in this project are HTML,CSS and JavaScript.Here js is used to obtain and update the current time.</p>
+                </div>
+                <div class="project-card">
+                    <a href="#home"><img src="images/project 3.png" alt="Project 3"></a>
+                    <h3>Project Three</h3>
+                    <p>A personal portfolio website showcasing design and development skills, using HTML, CSS, and JavaScript.<br>JavaScript is used for enhancing interactivity like smooth navigation and animations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nikhil Sharma. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
+    

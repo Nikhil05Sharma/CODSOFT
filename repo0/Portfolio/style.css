@@ -1,0 +1,367 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Background for the whole body */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stylish Sticky Navbar */
+header {
+    background: linear-gradient(90deg, #333, #555);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-icon .line {
+    
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+#navbar.active{
+    display: flex;
+}
+
+/* Navigation Bar (Horizontal on Large Screens) */
+#navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    margin: 0 20px;
+    
+}
+
+#navbar li a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Hover Effect */
+#navbar li a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: #333;
+        display: none;
+    }
+
+    #navbar.active{
+        display: flex;
+    }
+
+    #navbar li {
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url(images/1.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section .btn-main {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn-main:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-bottom: 1px solid #444;
+}
+
+
+#about, #education, #projects, #contact {
+    background-color: #1f1f1f;
+}
+.about-section {
+    background: url(images/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg) no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.about-section h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-text a {
+    background-color: #ff6347;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-text a:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+}
+
+.education-section {
+    background: url(images/technology-background_1007543-23584.jpg) no-repeat center center/cover;
+    padding: 100px 20px;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.projects-section {
+    background: url(images/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg) no-repeat center center/cover;
+    padding: 100px 20px;
+    background-color: #1a1a1a;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+.project-card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+#contact{
+    background: url(images/ai-artificial-intelligence-ai-digital-brain-robotics-concept-human-face-made-from-polygon.jpg) no-repeat center center/cover;
+    padding: 100px 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+}
+
+/* Form Styling */
+form {
+    
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+}
+
+/* Hover Effect for Form Input and Text Area */
+input:hover, textarea:hover {
+    border: 1px solid #ff6347;
+}
